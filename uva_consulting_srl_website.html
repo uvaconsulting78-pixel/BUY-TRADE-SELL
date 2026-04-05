@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UVA Consulting SRL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #111827;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: #f3f4f6;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      background: #1e3a8a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>UVA CONSULTING SRL</h1>
+  <p>Consultanță profesională pentru afacerea ta</p>
+</header>
+
+<nav>
+  <a href="#despre">Despre</a>
+  <a href="#servicii">Servicii</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Dezvoltăm afaceri. Construim succes.</h2>
+  <p>Oferim soluții personalizate pentru creșterea și optimizarea companiei tale.</p>
+  <button onclick="scrollToContact()">Contactează-ne</button>
+</section>
+
+<section id="despre">
+  <h2>Despre noi</h2>
+  <p>UVA Consulting SRL este o firmă specializată în consultanță pentru afaceri, oferind soluții moderne și eficiente pentru dezvoltarea companiilor din diverse domenii.</p>
+</section>
+
+<section id="servicii">
+  <h2>Serviciile noastre</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Consultanță Business</h3>
+      <p>Strategii personalizate pentru dezvoltarea afacerii tale.</p>
+    </div>
+    <div class="card">
+      <h3>Management Proiecte</h3>
+      <p>Planificare și implementare eficientă a proiectelor.</p>
+    </div>
+    <div class="card">
+      <h3>Optimizare Procese</h3>
+      <p>Reducerea costurilor și creșterea eficienței.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: contact@uvaconsulting.ro</p>
+  <p>Telefon: 07xx xxx xxx</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 UVA Consulting SRL. Toate drepturile rezervate.</p>
+</footer>
+
+<script>
+  function scrollToContact() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
